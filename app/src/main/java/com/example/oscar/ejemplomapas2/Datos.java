@@ -26,7 +26,7 @@ public class Datos extends AppCompatActivity {
                 Bundle datos = new Bundle();
                 lat= lati.getText().toString().trim();
                 lon=longi.getText().toString().trim();
-                datos.putString("LATITUD",lat);
+                datos.putString("LATITUDD",lat);
                 datos.putString("LONGITUD",lon);
                 Intent enviar = new Intent(Datos.this,MapsActivity.class);
                 enviar.addFlags(enviar.FLAG_ACTIVITY_CLEAR_TOP | enviar.FLAG_ACTIVITY_CLEAR_TASK);
